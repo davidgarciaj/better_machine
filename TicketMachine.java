@@ -104,8 +104,17 @@ public class TicketMachine
      * Devuelve las monedas que tiene la maquina y la vacia.
      */
     public int empyMachine(){
-        int recaudado = total;
-        total = 0;
-        return recaudado;
+        if(balance == 0)
+        {
+            int recaudado = total;
+            total = 0;
+            return recaudado;
+        }
+        else
+        {
+            int recaudado = -1;
+            return recaudado;
+        }
+        
     }
 }
